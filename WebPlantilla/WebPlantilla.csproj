@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BF53016-3C43-4CAF-A4F2-FEA98CDB34C0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebPlantilla</RootNamespace>
+    <AssemblyName>WebPlantilla</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccesoSistema\Imagenes\login-box-backg.png" />
+    <Content Include="AccesoSistema\Imagenes\login-btn.png" />
+    <Content Include="AccesoSistema\login-box.css" />
+    <Content Include="AccesoSistema\WebAcceso.aspx" />
+    <Content Include="AccesoSistema\WebComprobar.aspx" />
+    <Content Include="AccesoSistema\WebMenu.aspx" />
+    <Content Include="App_Data\dbAcademico.mdf" />
+    <Content Include="App_Data\dbAcademico_log.ldf">
+      <DependentUpon>dbAcademico.mdf</DependentUpon>
+    </Content>
+    <Content Include="Consultas\AlumnosGmail.aspx" />
+    <Content Include="Consultas\BuscarEstudiante.aspx" />
+    <Content Include="Consultas\ConsultasEstudiantes.aspx" />
+    <Content Include="default.css" />
+    <Content Include="estilo.css" />
+    <Content Include="EstudiantesSexo.aspx" />
+    <Content Include="fonts.css" />
+    <Content Include="ico_menu\inicio.png" />
+    <Content Include="ico_menu\inicio2.png" />
+    <Content Include="ico_menu\proceso.png" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebAcceso.aspx" />
+    <Content Include="WebCambio.aspx" />
+    <Content Include="WebDatos.aspx" />
+    <Content Include="WebListaCarreraTipado.aspx" />
+    <Content Include="WebListaEstudiantesXCarreraTipado.aspx" />
+    <Content Include="WebListaEstudiantexSexoCarrera.aspx" />
+    <Content Include="WebMantenimientoCarerraXestudiante.aspx" />
+    <Content Include="WebNrosPares.aspx" />
+    <Content Include="WedConsultaEstudiante.aspx" />
+    <Content Include="WedListaCarreras.aspx" />
+    <Content Include="WedListaestudiantesxcarrera.aspx" />
+    <Content Include="WedMantenimiento\MantenimientoEstudiante.aspx" />
+    <Content Include="WedMantenimiento\WebMantemientoCarrera.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccesoSistema\WebAcceso.aspx.cs">
+      <DependentUpon>WebAcceso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccesoSistema\WebAcceso.aspx.designer.cs">
+      <DependentUpon>WebAcceso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoSistema\WebComprobar.aspx.cs">
+      <DependentUpon>WebComprobar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccesoSistema\WebComprobar.aspx.designer.cs">
+      <DependentUpon>WebComprobar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoSistema\WebMenu.aspx.cs">
+      <DependentUpon>WebMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccesoSistema\WebMenu.aspx.designer.cs">
+      <DependentUpon>WebMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ccarrera.cs" />
+    <Compile Include="ClasesConnection\CAlumnosGmail.cs" />
+    <Compile Include="ClasesConnection\CconsultaEstudiantes.cs" />
+    <Compile Include="ClasesConnection\CConsultaSexo.cs" />
+    <Compile Include="Consultas\AlumnosGmail.aspx.cs">
+      <DependentUpon>AlumnosGmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\AlumnosGmail.aspx.designer.cs">
+      <DependentUpon>AlumnosGmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\BuscarEstudiante.aspx.cs">
+      <DependentUpon>BuscarEstudiante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\BuscarEstudiante.aspx.designer.cs">
+      <DependentUpon>BuscarEstudiante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultasEstudiantes.aspx.cs">
+      <DependentUpon>ConsultasEstudiantes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultasEstudiantes.aspx.designer.cs">
+      <DependentUpon>ConsultasEstudiantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstudiantesSexo.aspx.cs">
+      <DependentUpon>EstudiantesSexo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstudiantesSexo.aspx.designer.cs">
+      <DependentUpon>EstudiantesSexo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plantilla.Master.cs">
+      <DependentUpon>Plantilla.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plantilla.Master.designer.cs">
+      <DependentUpon>Plantilla.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebAcceso.aspx.cs">
+      <DependentUpon>WebAcceso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebAcceso.aspx.designer.cs">
+      <DependentUpon>WebAcceso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebCambio.aspx.cs">
+      <DependentUpon>WebCambio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebCambio.aspx.designer.cs">
+      <DependentUpon>WebCambio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebDatos.aspx.cs">
+      <DependentUpon>WebDatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebDatos.aspx.designer.cs">
+      <DependentUpon>WebDatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebListaCarreraTipado.aspx.cs">
+      <DependentUpon>WebListaCarreraTipado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebListaCarreraTipado.aspx.designer.cs">
+      <DependentUpon>WebListaCarreraTipado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebListaEstudiantesXCarreraTipado.aspx.cs">
+      <DependentUpon>WebListaEstudiantesXCarreraTipado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebListaEstudiantesXCarreraTipado.aspx.designer.cs">
+      <DependentUpon>WebListaEstudiantesXCarreraTipado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebListaEstudiantexSexoCarrera.aspx.cs">
+      <DependentUpon>WebListaEstudiantexSexoCarrera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebListaEstudiantexSexoCarrera.aspx.designer.cs">
+      <DependentUpon>WebListaEstudiantexSexoCarrera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebMantenimientoCarerraXestudiante.aspx.cs">
+      <DependentUpon>WebMantenimientoCarerraXestudiante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebMantenimientoCarerraXestudiante.aspx.designer.cs">
+      <DependentUpon>WebMantenimientoCarerraXestudiante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebNrosPares.aspx.cs">
+      <DependentUpon>WebNrosPares.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebNrosPares.aspx.designer.cs">
+      <DependentUpon>WebNrosPares.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WedConsultaEstudiante.aspx.cs">
+      <DependentUpon>WedConsultaEstudiante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WedConsultaEstudiante.aspx.designer.cs">
+      <DependentUpon>WedConsultaEstudiante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WedListaCarreras.aspx.cs">
+      <DependentUpon>WedListaCarreras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WedListaCarreras.aspx.designer.cs">
+      <DependentUpon>WedListaCarreras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WedListaestudiantesxcarrera.aspx.cs">
+      <DependentUpon>WedListaestudiantesxcarrera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WedListaestudiantesxcarrera.aspx.designer.cs">
+      <DependentUpon>WedListaestudiantesxcarrera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WedMantenimiento\MantenimientoEstudiante.aspx.cs">
+      <DependentUpon>MantenimientoEstudiante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WedMantenimiento\MantenimientoEstudiante.aspx.designer.cs">
+      <DependentUpon>MantenimientoEstudiante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WedMantenimiento\WebMantemientoCarrera.aspx.cs">
+      <DependentUpon>WebMantemientoCarrera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WedMantenimiento\WebMantemientoCarrera.aspx.designer.cs">
+      <DependentUpon>WebMantemientoCarrera.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Plantilla.Master" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1399</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,48 @@
+﻿#global
+{
+    width:800px;
+    height:600px;    
+}
+#cabecera
+{
+    width:800px;
+    height:70px;
+    background-color:Green;
+}
+#cabecera h2
+{
+   font-size:20px;
+   font-family:Verdana;
+   color:White;   
+}
+#menu
+{
+    /*width:200px;*/
+    width:800px;
+    /*height:495px;*/
+    height:60px;
+    background-color:Green;
+    float:left;
+}
+#submenu1
+{
+    width:200px;    
+}
+#submenu2
+{
+    width:200px;
+}
+#contenido
+{
+    width:800px;
+    background-color:White;
+}
+#pie
+{
+    width:800px;
+    height:35px;
+    background-color:Green;
+}
+
+    
+
